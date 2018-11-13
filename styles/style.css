@@ -84,6 +84,10 @@ section {
   background-color: #fff;
 }
 
+.top-stories {
+  height: 350px;
+}
+
 .container {
   display: flex;
 }
@@ -101,9 +105,14 @@ section {
 }
 
 .container-right .card {
-  display: inline-flex;
+  display: flex;
 
   width: 50%;
+  height: 100%;
 
   flex-flow: column nowrap;
+}
+
+.container-right .card h3 {
+  flex: 1;
 }
