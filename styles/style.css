@@ -10,7 +10,8 @@
 
 header,
 .panel,
-.timestamp {
+.top-stories__container__card__timestamp,
+.top-stories__card-list__card__timestamp {
   font-family: "Proxima Nova", sans-serif;
 }
 
@@ -102,19 +103,20 @@ section {
   font-weight: 600;
 }
 
-.container {
+.top-stories__container {
   display: flex;
 
   padding: 0 18px 18px;
 }
 
-.card {
+.top-stories__container__card,
+.top-stories__card-list__card {
   height: 140px;
   margin-top: 15px;
   padding-right: 25px;
 }
 
-.is-important {
+.top-stories__container__card--is-important {
   display: flex;
 
   width: 50%;
@@ -122,13 +124,13 @@ section {
   flex-flow: column;
 }
 
-.is-important h3 {
+.top-stories__container__card--is-important h3 {
   font-size: 34px;
 
   flex: 1;
 }
 
-.container-right {
+.top-stories__card-list {
   display: flex;
 
   width: 50%;
@@ -136,7 +138,14 @@ section {
   flex-flow: row wrap;
 }
 
-.container-right .card {
+/*
+Было:
+  .container-right .card
+Было в промежутке:
+  .top-stories__card-list .top-stories__container__card
+Финал ниже
+*/
+.top-stories__card-list__card {
   display: flex;
 
   width: 50%;
@@ -144,13 +153,14 @@ section {
   flex-flow: column nowrap;
 }
 
-.container-right .card h3 {
+.top-stories__card-list__card h3 {
   font-size: 20px;
 
   flex: 1;
 }
 
-.timestamp {
+.top-stories__container__card__timestamp,
+.top-stories__card-list__card__timestamp {
   color: gray;
 
   font-size: 12px;
