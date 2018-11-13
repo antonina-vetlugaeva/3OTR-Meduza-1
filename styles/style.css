@@ -83,3 +83,27 @@ section {
   border-top: 4px solid #b88b58;
   background-color: #fff;
 }
+
+.container {
+  display: flex;
+}
+
+.is-important {
+  width: 50%;
+}
+
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+
+.container-right .card {
+  display: inline-flex;
+
+  width: 50%;
+
+  flex-flow: column nowrap;
+}
