@@ -10,8 +10,8 @@
 
 header,
 .panel,
-.top-stories__container__card__timestamp,
-.top-stories__card-list__card__timestamp {
+.text-news__container__card__timestamp,
+.text-news__card-list__card__timestamp {
   font-family: "Proxima Nova", sans-serif;
 }
 
@@ -88,11 +88,11 @@ section {
   background-color: #fff;
 }
 
-.top-stories {
+.text-news {
   height: 370px;
 }
 
-.top-stories__header {
+.text-news__header {
   padding: 16px 18px 0;
 
   text-transform: uppercase;
@@ -103,20 +103,20 @@ section {
   font-weight: 600;
 }
 
-.top-stories__container {
+.text-news__container {
   display: flex;
 
   padding: 0 18px 18px;
 }
 
-.top-stories__container__card,
-.top-stories__card-list__card {
+.text-news__container__card,
+.text-news__card-list__card {
   height: 140px;
   margin-top: 15px;
   padding-right: 25px;
 }
 
-.top-stories__container__card--is-important {
+.text-news__container__card--is-important {
   display: flex;
 
   width: 50%;
@@ -124,13 +124,13 @@ section {
   flex-flow: column;
 }
 
-.top-stories__container__card--is-important h3 {
+.text-news__container__card--is-important h3 {
   font-size: 34px;
 
   flex: 1;
 }
 
-.top-stories__card-list {
+.text-news__card-list {
   display: flex;
 
   width: 50%;
@@ -142,10 +142,10 @@ section {
 Было:
   .container-right .card
 Было в промежутке:
-  .top-stories__card-list .top-stories__container__card
+  .text-news__card-list .text-news__container__card
 Финал ниже
 */
-.top-stories__card-list__card {
+.text-news__card-list__card {
   display: flex;
 
   width: 50%;
@@ -153,14 +153,14 @@ section {
   flex-flow: column nowrap;
 }
 
-.top-stories__card-list__card h3 {
+.text-news__card-list__card h3 {
   font-size: 20px;
 
   flex: 1;
 }
 
-.top-stories__container__card__timestamp,
-.top-stories__card-list__card__timestamp {
+.text-news__container__card__timestamp,
+.text-news__card-list__card__timestamp {
   color: gray;
 
   font-size: 12px;
