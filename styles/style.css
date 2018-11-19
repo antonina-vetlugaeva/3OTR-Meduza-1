@@ -8,12 +8,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-header,
-.panel,
-.text-news article footer {
-  font-family: "Proxima Nova", sans-serif;
-}
-
 h3 {
   font-family: "PF Regal", serif;
 }
@@ -29,6 +23,7 @@ body > header {
   color: #f2f2f2;
   background-color: rgb(38, 38, 38);
 
+  font-family: "Proxima Nova", sans-serif;
   font-size: 13px;
 
   justify-content: space-between;
@@ -91,13 +86,14 @@ section {
   height: 370px;
 }
 
-.text-news__header {
+.text-news > header {
   padding: 16px 18px 0;
 
   text-transform: uppercase;
 
   color: gray;
 
+  font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -136,6 +132,7 @@ section {
 .text-news article footer {
   color: gray;
 
+  font-family: "Proxima Nova", sans-serif;
   font-size: 12px;
 }
 
