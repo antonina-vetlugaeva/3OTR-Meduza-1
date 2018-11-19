@@ -10,8 +10,7 @@
 
 header,
 .panel,
-.text-news__container__card__timestamp,
-.text-news__card-list__card__timestamp {
+.text-news article footer {
   font-family: "Proxima Nova", sans-serif;
 }
 
@@ -103,34 +102,13 @@ section {
   font-weight: 600;
 }
 
-.text-news__container {
+.text-news__body {
   display: flex;
 
   padding: 0 18px 18px;
 }
 
-.text-news__container__card,
-.text-news__card-list__card {
-  height: 140px;
-  margin-top: 15px;
-  padding-right: 25px;
-}
-
-.text-news__container__card--is-important {
-  display: flex;
-
-  width: 50%;
-
-  flex-flow: column;
-}
-
-.text-news__container__card--is-important h3 {
-  font-size: 34px;
-
-  flex: 1;
-}
-
-.text-news__card-list {
+.text-news__body__list {
   display: flex;
 
   width: 50%;
@@ -138,30 +116,39 @@ section {
   flex-flow: row wrap;
 }
 
-/*
-Было:
-  .container-right .card
-Было в промежутке:
-  .text-news__card-list .text-news__container__card
-Финал ниже
-*/
-.text-news__card-list__card {
+.text-news article {
   display: flex;
 
   width: 50%;
+  height: 140px;
+  margin-top: 15px;
+  padding-right: 25px;
 
   flex-flow: column nowrap;
 }
 
-.text-news__card-list__card h3 {
+.text-news article h3 {
   font-size: 20px;
 
   flex: 1;
 }
 
-.text-news__container__card__timestamp,
-.text-news__card-list__card__timestamp {
+.text-news article footer {
   color: gray;
 
   font-size: 12px;
+}
+
+.text-news article.is-featured {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: column;
+}
+
+.text-news article.is-featured h3 {
+  font-size: 34px;
+
+  flex: 1;
 }
