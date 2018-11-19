@@ -8,10 +8,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h3 {
-  font-family: "PF Regal", serif;
-}
-
 body > header {
   display: flex;
 
@@ -120,6 +116,7 @@ section {
 }
 
 .text-news article h3 {
+  font-family: "PF Regal", serif;
   font-size: 20px;
   line-height: 1.1;
 
