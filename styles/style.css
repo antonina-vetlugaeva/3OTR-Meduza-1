@@ -63,8 +63,8 @@ body > header li {
 }
 
 main {
-  height: 100vh;
-  padding-top: 15px;
+  min-height: 150vh;
+  padding: 15px 0 15px;
 
   background-color: rgb(242, 242, 242);
 }
@@ -72,14 +72,15 @@ main {
 section {
   width: 97vw;
   margin: 0 auto;
-
-  border: 1px solid #ccc;
-  border-top: 4px solid #b88b58;
-  background-color: #fff;
+  margin-bottom: 15px;
 }
 
 .text-news {
   padding: 16px 18px 0;
+
+  border: 1px solid #ccc;
+  border-top: 4px solid #b88b58;
+  background-color: #fff;
 }
 
 .text-news > header {
@@ -120,7 +121,7 @@ section {
   font-size: 20px;
   line-height: 1.1;
 
-  flex-grow: 1;
+  flex: 1;
 }
 
 .text-news article footer {
@@ -138,4 +139,69 @@ section {
 
 .text-news article.is-featured h3 {
   font-size: 34px;
+}
+
+.photo-news {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.photo-news__article {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 2px;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+.photo-news__article > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.photo-news__article__fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    -180deg,
+    transparent,
+    rgba(0,0,0,.05) 5%,
+    rgba(0,0,0,.2) 25%,
+    rgba(0,0,0,.5)
+  );
+}
+
+.photo-news__article__desc {
+  position: absolute;
+  bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 50%;
+  padding: 60px 18px 0;
+
+  color: #fff;
+}
+
+.photo-news__article__desc h3 {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+
+  flex: 1;
+}
+
+.photo-news__article__desc h3 i {
+  font-family: "PF Regal", serif;
+  font-weight: normal;
 }
